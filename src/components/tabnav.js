@@ -2,15 +2,11 @@ import React, { Component } from 'react';
 
 class TabNav extends Component {
   render() {
-    var JSX = [
-        <h1>TABS</h1>
-    ];
+    return (
+        <div className='tab-nav'>
 
-    this.props.tabs.map((tab, index) => {
-        JSX.push(tab.component);
-    })
-
-    return JSX;
+        </div>
+    )
   }
 }
 
