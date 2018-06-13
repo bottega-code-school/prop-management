@@ -53,8 +53,10 @@
 // BUTTON
 
 .form-button,
-.form-button-small {
-    &__button {
+.form-button-small,
+.form-image {
+    &__button,
+    &__replace {
         transition: all .2s ease;
         &:focus {
             outline: none;
@@ -81,7 +83,6 @@
 }
 
 .form-button-small {
-
     &__button {
         border-radius: 1.6rem;
         border: 1px solid $color-gray-4D;
@@ -104,15 +105,42 @@
 
 // IMAGE
 .form-image {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: [title-s] 1fr [title-e image-s] 13.7rem [image-e];
+    grid-template-columns: [s] 16rem [e];
+
+    & > * {
+        grid-column: s/e;
+    }
+
     &__title {
         @include red-title;
         margin-bottom: 2rem;
+        grid-row: title-s/title-e;
     }
     &__image {
         height: 13.7rem;
         width: 16rem;
         border: none;
+        background-color: rgb(218, 218, 218);
+        grid-row: image-s/image-e;
+    }
+    &__replace {
+        border-radius: 1.6rem;
+        border: 1px solid white;
+        background-color: white;
+
+        width: 13rem;
+        height: 2.4rem;
+    
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+        text-align: center;
+
+        color: $color-red-BA;
+        grid-row: image-s/image-e;
+
+        justify-self: center;
+        align-self: center;
     }
 }
