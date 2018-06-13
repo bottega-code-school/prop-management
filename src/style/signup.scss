@@ -5,26 +5,32 @@
 
 .sign-up-form {
     display: grid;
+    grid-template-columns: [s] 1fr [input-s] 629px [input-e] 1fr [e];
     justify-items: center;
     
     &__title {
         width: 100%;
         margin-top: 6.6rem;
+        grid-column: s/e;
     }
     &__fullname {
         margin-top: 7.7rem;
+        grid-column: input-s/input-e;
     }
     
     &__unit,
     &__email,
     &__password  {
         margin-top: 4rem;
+        grid-column: input-s/input-e;
     }
 
     &__create-account {
         margin-top: 8.8rem;
+        grid-column: input-s/input-e;
     }
     &__text-links {
         margin-top: 5.2rem;
+        grid-column: input-s/input-e;
     }
 }
