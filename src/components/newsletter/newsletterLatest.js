@@ -7,7 +7,7 @@ import Button from '../button';
 class NewsletterLatest extends Component {
 
     handleEdit = () => {
-        this.props.history.push('/newsletter/edit');
+        this.props.history.push(`/newsletter/edit/${this.props._id}`);
     }
 
     render() {
