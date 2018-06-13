@@ -6,6 +6,7 @@
         width: 100%;
         margin-top: 6.6rem;
         grid-column: s/e;
+        grid-row: 1;
     }
 
     &__newsletter-title,
@@ -16,5 +17,20 @@
 
     &__body {
         margin-top: 2rem;
+    }
+
+    &__submit,
+    &__cancel {
+        grid-column: 1/-1;
+        grid-row: 1;
+        justify-self: end;
+        align-self: end;
+
+        margin-left: .2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    &__cancel {
+        transform: translateX(-15.5rem);
     }
 }
