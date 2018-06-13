@@ -25,6 +25,7 @@
     display: grid;
     grid-row-gap: 1.6rem;
     grid-template-rows: repeat(auto-fit, 1fr);
+    align-content: start;
 
     &__item {
 
