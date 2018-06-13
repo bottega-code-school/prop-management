@@ -1,14 +1,5 @@
 import React, { Component } from 'react';
-
-function Button({className, callback, text, icon}) {
-    if(icon) {
-        return (
-            <a onClick={callback} className={`${className} button`}>
-                <i className={icon}></i>
-            </a>
-        )
-    } 
-}
+import Button from '../button';
 
 class NewsletterLatest extends Component {
 

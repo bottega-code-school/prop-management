@@ -1,5 +1,7 @@
 .newsletter-box {
 
+    grid-row: box-s/box-e;
+    grid-column: box-s/box-e;
     align-content: center;
 
     height: 16rem;

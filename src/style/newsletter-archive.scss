@@ -1,4 +1,6 @@
 .newsletter-archive {
+    margin-top: 3.85rem;
+
     grid-row: archive-s/archive-e;
     grid-column: archive-s/archive-e;
 
@@ -14,9 +16,6 @@
         border-bottom: .1rem solid $color-gray-E6;
         padding-bottom: .4rem;
     }
-    &__items {
-
-    }
 }
 
 
@@ -26,10 +25,6 @@
     grid-row-gap: 1.6rem;
     grid-template-rows: repeat(auto-fit, 1fr);
     align-content: start;
-
-    &__item {
-
-    }
 }
 
 .archive-item {
