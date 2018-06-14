@@ -1,7 +1,9 @@
 .requests-boxes {
-    background-color: cornflowerblue;
+    // background-color: cornflowerblue;
     grid-column: boxes-s/boxes-e;
     grid-row: boxes-s/boxes-e;
 
-    height: 500px;
+    display: grid;
+    grid-row-gap: 1.55rem;
+
 }
