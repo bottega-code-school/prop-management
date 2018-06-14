@@ -3,14 +3,15 @@
     grid-row: content-s/content-e;
 
     display: grid;
-    grid-template-rows: [add-s] 4.7rem [add-e s box-s] 16rem [box-e archive-s] 1fr [archive-e e];
-    grid-template-columns: [box-s archive-s] 16rem [box-e archive-e latest-s] 960px [latest-e];
+    grid-template-rows: [add-s] 4.7rem [add-e s boxes-s] 1fr [boxes-e e];
+    grid-template-columns: [boxes-s] 16rem [boxes-e requests-s] 960px [requests-e];
 
     grid-column-gap: 6.1rem;
 
+
     &__button {
         grid-row: add-s/add-e;
-        grid-column: latest-s/latest-e;
+        grid-column: requests-s/requests-e;
         justify-self: end;
         align-self: center;
         margin-right: 1rem;
