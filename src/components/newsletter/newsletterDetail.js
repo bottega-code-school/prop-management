@@ -15,7 +15,7 @@ class NewsletterDetail extends Component {
         this.props.fetchNewsletterWithId(this.props.match.params.id);
     }
 
-    render() {
+    render() { 
         console.log(this.props.newsletterToEdit);
         return (
             <div className='newsletter-detail'>
