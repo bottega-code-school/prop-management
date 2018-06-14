@@ -1,3 +1,4 @@
+
 .requests-box {
     align-content: center;
 
@@ -47,5 +48,36 @@
         border: .15rem solid $color-red-BA;
         border-bottom: none;
         border-left: none;
+    }
+}
+
+
+.requests-box-active {
+    background-color: $color-red-BA;
+    border-color: $color-red-BA;
+
+    .requests-box {
+        &__title,
+        &__count {
+            color: white;
+        }
+        &__point {
+            background-color: $color-red-BA;
+            border-color: $color-red-BA;
+        }
+    }
+}
+
+.requests-box-inactive {
+    border-color: $color-gray-E6;
+
+    .requests-box {
+        &__title,
+        &__count {
+            color: $color-gray-4D;
+        }
+        &__point {
+            display: none;
+        }
     }
 }
