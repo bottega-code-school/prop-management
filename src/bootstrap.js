@@ -26,28 +26,26 @@ import NewNewsletter from './components/newsletter/newsletterNew';
 import EditNewsletter from './components/newsletter/newsletterEdit';
 import NewsletterDetail from './components/newsletter/newsletterDetail';
 
+import NewRequest from './components/requests/requestsNew';
+
 function main() {
   ReactDOM.render(
     <Provider store={createStoreWithMiddleware(reducers)}>
       <Router history={history}>
         <Switch>
           <Layout>
-            {/* AUTH */}
             <Route path='/' exact component={Signin}/>
             <Route path='/signin' component={Signin}/>
             <Route path='/signup' component={Signup}/>
 
-             {/* DASHBOARD */}
              <Route path='/dashboard' component={Dashboard}/>
              {/* <Route path='/dashboard' component={requireAuth(Dashboard)}/> */}
 
-            {/* NEWSLETTER */}
             <Route path='/newsletter/new' component={requireAuth(NewNewsletter)}/>
             <Route path='/newsletter/edit/:id' component={requireAuth(EditNewsletter)}/>
             <Route path='/newsletter/detail/:id' component={requireAuth(NewsletterDetail)}/>
 
-            {/* REQUESTS */}
-            <Route path='/request/new' component={requireAuth(NewNewsletter)}/>
+            <Route path='/request/new' component={requireAuth(NewRequest)}/>
 
           </Layout>
         </Switch>
