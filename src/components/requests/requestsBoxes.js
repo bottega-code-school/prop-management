@@ -26,7 +26,7 @@ function mapStateToProps(state) {
     requests.map(request => {
         if(request.status == 'pending') {
             pendingCount += 1;
-        } else if(request.status == 'progress') {
+        } else if(request.status == 'in-progress') {
             progressCount += 1;
         } else if(request.status == 'complete') {
             completeCount += 1;
