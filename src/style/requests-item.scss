@@ -1,7 +1,7 @@
 .requests-item {
     display: grid;
     grid-template-rows: [s title-s] 34px [title-e tenant-s] 34px [tenant-e e description-s] 147px [description-e];
-    grid-template-columns: [icon-s] 68px [icon-e s title-s] minmax(40px, 1fr) [title-e arrow-s] 68px [arrow-e date-s] 100px [date-e e] 60px;
+    grid-template-columns: [icon-s] 100px [icon-e s title-s] minmax(40px, 1fr) [title-e arrow-s] 68px [arrow-e date-s] 100px [date-e e] 60px;
 
     align-items: center;
 
@@ -47,7 +47,7 @@
 
 .requests-item {
     &__icon {
-        font-size: 3rem;
+        font-size: 2.7rem;
     }
     &__title {
         &__text {
