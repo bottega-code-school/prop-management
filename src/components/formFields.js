@@ -64,8 +64,10 @@ export class FormButton extends Component {
 export class FormImage extends Component {
 
     handleSelectedImage = (event) => {
+        const { input: { onChange } } = this.props;
         var image = document.getElementById('newsletter-new-image');
         image.src = URL.createObjectURL(event.target.files[0]);
+        onChange(event.target.files[0])
     }
 
     render() {
@@ -81,7 +83,6 @@ export class FormImage extends Component {
                 <input
                     className='form-image__replace'
                     type='button'
-                    // id=''
                     value='Replace'
                     onClick={
                         () => document.getElementById('file') ? document.getElementById('file').click() : ''
