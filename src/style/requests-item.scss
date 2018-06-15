@@ -1,3 +1,24 @@
 .requests-item {
+    display: grid;
+    grid-template-rows: [title-s] 34px [title-e tenant-s] 34px [tenant-e description-s] 147px [description-e];
+    grid-template-columns: [icon-s] 68px [icon-e title-s] 1fr [title-e arrow-s] 68px [arrow-e date-s] 100px [date-e];
+    
+    &__icon {
 
+    }
+    &__title {
+
+    }
+    &__tenant-unit {
+
+    }
+    &__arrow {
+
+    }
+    &__date {
+
+    }
+    &__move {
+
+    }
 }
