@@ -31,8 +31,15 @@ class RequestsItem extends Component {
         }
     }
 
+    handleStatus = () => {
+        const { _id, status } = this.props;
+        this.props.changeStatus({_id, status}, () => {
+            this.props.fetchRequests();
+        })
+    }
+
     render() {
-        const { _id, title, body, date, imageUrl, status } = this.props;
+        const { title, body, date, imageUrl } = this.props;
         const parsedDate = new Date(date);
         return (
             <div id='requests-item' className='requests-item'>
@@ -51,7 +58,7 @@ class RequestsItem extends Component {
                     /
                     { parsedDate.getFullYear() - 2000 } 
                 </div>
-                <Button className='requests-item__move' icon='fas fa-wrench' callback={() => this.props.changeStatus({_id, status})}/>
+                <Button className='requests-item__move' icon='fas fa-wrench' callback={() => this.handleStatus()}/>
                 <div className='requests-item__description'>
                     <AnimateHeight
                         duration={300}
