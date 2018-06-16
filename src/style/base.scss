@@ -22,7 +22,7 @@ body {
     height: 100vh;
 
     display: grid;
-    grid-template-rows: [page-s header-s] 13.6rem [header-e bar-s] 4rem [bar-e content-s] 1fr [content-e page-e];
+    grid-template-rows: [page-s header-s] 13.6rem [header-e bar-s] auto [bar-e content-s] 1fr [content-e page-e];
     grid-template-columns: [page-s] 14rem [content-s] 1fr [content-e] 14rem [page-e]
 }
 

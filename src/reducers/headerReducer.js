@@ -7,7 +7,7 @@ const INITIAL_STATE = {
 }
 
 export default function(state = INITIAL_STATE, action) {
-    switch (key) {
+    switch (action.type) {
         case UPDATE_HEADER:
             const { title, subtitle, hideBar } = action.payload;
             return {
