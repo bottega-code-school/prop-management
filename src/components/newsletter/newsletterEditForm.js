@@ -67,7 +67,6 @@ class EditNewsletterForm extends Component {
                     'http://via.placeholder.com/150x137'}
         />  
 
-
       </form>
     );
   }
